@@ -38,13 +38,11 @@ int main()
 			cin >> fila_A;
 			cout << "Ingrese numero  de columnas de la matriz A: ";
 			cin >> columna_A;
-			cout << "Ingrese numero de filas de la matriz B:";
-			cin >> fila_B;
-			cout << "Ingrese numero  de columnas de la matriz B: ";
-			cin >> columna_B;
+			fila_B = 0;
+			columna_B = 0;
 			Math* s;
 			s = new Math(fila_A, columna_A, fila_B, columna_B);
-			s->SumaMatrices(fila_A, columna_A, fila_B, columna_B);
+			s->SumaMatrices(fila_A, columna_A);
 			delete s;
 			rep = true;
 			system("pause");
